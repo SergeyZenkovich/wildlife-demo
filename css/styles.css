@@ -20,6 +20,15 @@ body{
   margin: -1px;
 }
 
+button:hover,
+a:hover,
+input[type='submit'] {
+  cursor: pointer;
+}
+a:hover{
+  color: #cd6326;
+}
+
 .headSection{
   display: flex;
   flex-direction: column;
@@ -87,10 +96,20 @@ header{
   top: -1px;
   width: 120px;
   height: 50px;
-  border: 2px solid #CD6326;
+  border: 2px solid #cd6326;
   box-sizing: border-box;
   border-radius: 5px;
   font-family: 'Roboto';
+}
+.navigationBlock__link_button:hover{
+  background-color: #cd6326;
+  border-color: #cd6326;
+  color: #f7f7f7;
+}
+.navigationBlock__link_button:active{
+  background-color: #8f5613;
+  border-color: #8f5613;
+  color: #f7f7f7;
 }
 
 .survivalBlock{
@@ -108,6 +127,8 @@ header{
   font-weight: 400;
 }
 .survivalBlock__text{
+  position: relative;
+  top: -8px;
   width: 274px;
   height: 108px;
   font-size: 18px;
@@ -115,6 +136,9 @@ header{
   color: #f7f7f7;
 }
 .survivalBlock__button{
+  position: relative;
+  top: 36px;
+  left: 34px;
   width: 76px;
   height: 27px;
   font-size: 23px;
@@ -127,7 +151,7 @@ header{
 main{
   position: absolute;
   left: 0px;
-  top: 780px;
+  top: 779px;
   width: 1440px;
   height: 1368px;
   background-color: #ccc;
@@ -145,7 +169,8 @@ main{
 }
 .latestArticlesBlock__headingsBlock{
   position: absolute;
-  top: 120px;
+  top: 121px;
+  left: 446px;
 }
 .latestArticlesBlock__heading{
   left: 558px; 
@@ -156,6 +181,9 @@ main{
   color: #333;
 }
 .latestArticlesBlock__subheader{
+  position: relative;
+  top: -4px;
+  left: -5px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px; 
@@ -165,6 +193,7 @@ main{
 .slider{
   position: absolute;
   top: 368px;
+  left: -7px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -173,7 +202,7 @@ main{
 .slider__nextButton,
 .slider__prevButton{
   position: relative;
-  bottom: -145px;
+  top: 147px;
   width: 32px;
   height: 70px;
   background-color: transparent;
@@ -183,11 +212,11 @@ main{
 }
 .slider__prevButton{
   background-image: url('../assets/images/Prev.svg');
-  left: 5px;
+  left: 6px;
   
 }
 .slider__nextButton{
-  right: 5px;
+  right: -8px;
   background-image: url('../assets/images/Next.svg');
 }
 .slider__slide{
@@ -226,13 +255,15 @@ main{
   line-height: 36px;
 }
 .slider__slideParagraph{
+  position: relative;
+  top: -7px;
   font-size: 17px;
   line-height: 27px;
 }
 
 .getNotifiedSection{
   position: absolute;
-  top: 967px;
+  top: 941px;
   width: 1200px;
   margin: 0;
 }
@@ -243,30 +274,55 @@ main{
   color: #333;
 }
 .getNotifiedSection__form{
+  position: relative;
+  top: 32px;
   display: flex;
   width: 660px;
   margin: 0 auto;
 }
 .getNotifiedSection__input{
+  position: relative;
+  left: -1px;
   width: 540px;
-  height: 60px;
+  height: 58px;
   border: 1px solid #666;
   background-color: transparent;
+  font-size: 23px;
+  color: #666;
+}
+.getNotifiedSection__input::placeholder{
+  position: relative;
+  left: 12px;
+  top: 4px;
+  font-family: 'Roboto';
+  font-size: 23px;
+  color: #666;
 }
 .getNotifiedSection__button{
-  width: 120px;
-  height: 60px;
+  position: absolute;
+  left: 539px;
+  width: 108px;
+  height: 58px;
   box-sizing: content-box;
-  color: #f7f7f7;
   font-size: 23px;
+  color: #f7f7f7;
   background-color: #cd6326;
-  border: 1px solid #666;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+}
+.getNotifiedSection__button:hover{
+  background-color: #e39128;
+  border-color: #e39128;
+}
+.getNotifiedSection__button:active{
+  background-color: #8f5613;
+  border-color: #8f5613;
 }
 
 footer{
   position: absolute;
   left: 0px;
-  top: 2148px;
+  top: 2147px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -277,12 +333,14 @@ footer{
 }
 .footerNavigation{
   position: absolute;
-  width: 550px;
+  left: 480px;
+  width: 476px;
 }
 .footerNavigation__list{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
   list-style: none;
 }
 .footerNavigation__link{
@@ -296,15 +354,21 @@ footer{
 }
 .socials{
   position: absolute;
-  left: 1080px;
+  left: 1040px;
   top: 160px;
   display: flex;
   justify-content: space-between;
-  width: 255px;
+  width: 240px;
   margin: 0;
   list-style: none;
 }
 footer .logoBlock{
   position: absolute;
-  left: 20px;
+  left: 120px;
+  top: 128px;
+}
+footer .logoBlock__text{
+  position: relative;
+  left: 15px;
+  top: -2px;
 }

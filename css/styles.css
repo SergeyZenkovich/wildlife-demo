@@ -2,6 +2,10 @@
   font-family: 'fontOpen';
   src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
 }
+@font-face{
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
 body{
   margin: 0;
   padding: 0;
@@ -39,7 +43,8 @@ header{
   align-items: center;
 }
 .logoBlock__image{
-
+  position: relative;
+  top: -1px;
 }
 .logoBlock__heading{
   margin: 0;
@@ -47,13 +52,18 @@ header{
   color: #cd6326;
 }
 .logoBlock__text{
+  position: absolute;
+  left: 85px;
+  top: -5px;
   max-width: 0;
   font-size: 32px;
   text-transform: uppercase;
   color: #f7f7f7;
 }
 .navigationBlock{
-  width: 500px;
+  position: absolute;
+  left: 680px;
+  width: 520px;
 }
 .navigationBlock__list{
   display: flex;
@@ -73,24 +83,29 @@ header{
   line-height: 60px;
 }
 .navigationBlock__link_button{
+  position: relative;
+  top: -1px;
   width: 120px;
   height: 50px;
   border: 2px solid #CD6326;
   box-sizing: border-box;
   border-radius: 5px;
+  font-family: 'Roboto';
 }
 
 .survivalBlock{
+  position: relative;
+  top: 60px;
+  left: 120px;
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
-  margin-left: 120px;
 }
 .survivalBlock__heading{
   font-size: 48px;
   line-height: 72px; 
   letter-spacing: 2px;
   color: #cd6326;
+  font-weight: 400;
 }
 .survivalBlock__text{
   width: 274px;
@@ -261,6 +276,7 @@ footer{
   background-image: url('../assets/images/Footer.png');
 }
 .footerNavigation{
+  position: absolute;
   width: 550px;
 }
 .footerNavigation__list{
@@ -277,4 +293,18 @@ footer{
   font-size: 23px;
   text-decoration: none;
   line-height: 60px;
+}
+.socials{
+  position: absolute;
+  left: 1080px;
+  top: 160px;
+  display: flex;
+  justify-content: space-between;
+  width: 255px;
+  margin: 0;
+  list-style: none;
+}
+footer .logoBlock{
+  position: absolute;
+  left: 20px;
 }

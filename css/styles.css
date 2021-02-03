@@ -478,7 +478,7 @@ footer .logoBlock__text{
   }
   .latestArticlesBlock__headingsBlock{
     position: relative;
-    top: 10px;
+    top: 20px;
     left: auto;
   }
   .latestArticlesBlock__heading{
@@ -501,7 +501,7 @@ footer .logoBlock__text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 690px;
     height: 360px;
   }
   .slider__nextButton,
@@ -512,15 +512,23 @@ footer .logoBlock__text{
     height: 65px;
   }
   .slider__prevButton{
-    left: 0px;
+    left: -10px;
   }
   .slider__nextButton{
-    right: 0px;
+    right: -10px;
   }
   .slider__slide{
     position: relative;
-    width: auto;
-    height: auto;
+  }
+  .slider__slidesWrapper{
+    width: 650px;
+    height: 360px;
+    overflow: hidden;
+  }
+  .slider__slides{
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
   }
   .slide1{
     left: auto;
@@ -530,7 +538,6 @@ footer .logoBlock__text{
   }
   .slide3{
     left: auto;
-    display: none;
   }
   .slider__slideHeading{
     font-size: 20px;
@@ -542,19 +549,74 @@ footer .logoBlock__text{
     font-size: 15px;
     line-height: 25px;
   }
-  
-  
-  /* .latestArticlesBlock{
-    position: relative;
-    width: 83%;
-    height: auto;
-  }
 
+
+  .getNotifiedSection{
+    position: relative;
+    top: 40px;
+    left: auto;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .getNotifiedSection__heading{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .getNotifiedSection__form{
+    position: relative;
+    top: auto;
+    width: 660px;
+  }
+  .getNotifiedSection__input{
+    position: relative;
+    left: auto;
+    width: 540px;
+    height: 58px;
+    font-size: 21px;
+  }
+  .getNotifiedSection__input::placeholder{
+    position: relative;
+    left: 12px;
+    top: 2px;
+    font-size: 21px;
+  }
+  .getNotifiedSection__button{
+    left: 539px;
+    width: 108px;
+    height: 58px;
+    font-size: 21px;
+  }
+  
   footer{
     position: relative;
     width: 100%;
     height: auto; 
-  } */
+  } 
+  .footerNavigation{
+    position: relative;
+    left: 90px;
+    width: 320px;
+  }
+  .footerNavigation__link{
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .socials{
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 240px;
+  }
+  footer .logoBlock{
+    position: relative;
+    left: 0px;
+    top: auto;
+  }
+  footer .logoBlock__text{
+    position: relative;
+    left: 15px;
+    top: -2px;
+    font-size: 30px;
 } 
 @media only screen and (max-width: 900px){
   .headSection{
@@ -607,7 +669,7 @@ footer .logoBlock__text{
     line-height: 18px;
   }
   .survivalBlock__button{
-    top: 5px;
+    top: 0px;
     left: 20px;
     width: 60px;
     height: 25px;
@@ -618,7 +680,7 @@ footer .logoBlock__text{
     height: 90vh;
   }
   .latestArticlesBlock__headingsBlock{
-    top: 0px;
+    top: 10px;
   }
   .latestArticlesBlock__heading{
     font-size: 38px;
@@ -628,6 +690,75 @@ footer .logoBlock__text{
     font-size: 18px;
     line-height: 25px; 
   }
+
+  .slider{
+    width: 350px;
+  }
+  .slider__nextButton,
+  .slider__prevButton{
+    position: relative;
+    top: auto;
+    width: 32px;
+    height: 50px;
+  }
+  .slider__prevButton{
+    left: -10px;
+  }
+  .slider__nextButton{
+    right: -10px;
+  }
+  .slider__slide{
+    position: relative;
+  }
+  .slider__slidesWrapper{
+    width: 320px;
+  }
+
+  .getNotifiedSection{
+    top: 20px;
+    width: 85%;
+  }
+  .getNotifiedSection__heading{
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .getNotifiedSection__form{
+    width: 580px;
+  }
+  .getNotifiedSection__input{
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .getNotifiedSection__input::placeholder{
+    position: relative;
+    left: 12px;
+    top: 2px;
+    font-size: 18px;
+  }
+  .getNotifiedSection__button{
+    left: 505px;
+    width: 88px;
+    height: 50px;
+    font-size: 18px;
+  }
+  
+  .footerNavigation{
+    left: 70px;
+    width: 240px;
+  }
+  .footerNavigation__link{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .socials{
+    width: 180px;
+  }
+  footer .logoBlock__text{
+    left: 5px;
+    top: -2px;
+    font-size: 26px;
+} 
 }
 
 @media only screen and (max-width: 700px){
@@ -674,7 +805,7 @@ footer .logoBlock__text{
     line-height: 14px;
   }
   .survivalBlock__button{
-    top: -20px;
+    top: -30px;
     left: 10px;
     width: 40px;
     height: 20px;
@@ -682,10 +813,10 @@ footer .logoBlock__text{
     line-height: 18px;
   }
   main{
-    height: 80vh;
+    height: 85vh;
   }
   .latestArticlesBlock__headingsBlock{
-    top: -10px;
+    top: 0px;
   }
   .latestArticlesBlock__heading{
     font-size: 32px;
@@ -695,6 +826,61 @@ footer .logoBlock__text{
     font-size: 15px;
     line-height: 20px; 
   }
+
+  .getNotifiedSection{
+    top: -5px;
+    width: 95%;
+  }
+  .getNotifiedSection__heading{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .getNotifiedSection__form{
+    width: 420px;
+  }
+  .getNotifiedSection__input{
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .getNotifiedSection__input::placeholder{
+    position: relative;
+    left: 12px;
+    top: 2px;
+    font-size: 15px;
+  }
+  .getNotifiedSection__button{
+    left: 355px;
+    width: 55px;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  footer{
+    justify-content: space-between;
+  }
+
+  .footerNavigation{
+    left: 50px;
+    width: 190px;
+  }
+  .footerNavigation__link{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .socials{
+    padding: 0;
+    flex-wrap: wrap;
+    width: 100px;
+  }
+  .socials__element{
+    margin: 5px;
+  }
+  footer .logoBlock__text{
+    left: 5px;
+    top: -2px;
+    font-size: 22px;
+} 
 }
 @media only screen and (max-width: 450px){
   .headSection{
@@ -722,7 +908,7 @@ footer .logoBlock__text{
     line-height: 12px;
   }
   .survivalBlock__button{
-    top: -30px;
+    top: -40px;
     left: -5px;
     width: 35px;
     height: 18px;
@@ -730,10 +916,7 @@ footer .logoBlock__text{
   }
 
   main{
-    height: 70vh;
-  }
-  .latestArticlesBlock__headingsBlock{
-    top: -30px;
+    height: 80vh;
   }
   .latestArticlesBlock__heading{
     font-size: 26px;
@@ -742,5 +925,48 @@ footer .logoBlock__text{
   .latestArticlesBlock__subheader{
     font-size: 12px;
     line-height: 14px; 
+  }
+  .slider__prevButton{
+    left: 0px;
+  }
+  .slider__nextButton{
+    right: 9px;
+  }
+  .slider__slide img {
+    width: 280px;
+  }
+
+  .getNotifiedSection{
+    top: -5px;
+  }
+  .getNotifiedSection__heading{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .getNotifiedSection__form{
+    width: 300px;
+  }
+  .getNotifiedSection__input{
+    width: 220px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .getNotifiedSection__input::placeholder{
+    font-size: 12px;
+  }
+  .getNotifiedSection__button{
+    left: 225px;
+    width: 40px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .footerNavigation{
+    left: 0px;
+    width: 180px;
+  }
+  .footerNavigation__link{
+    font-size: 12px;
+    line-height: 16px;
   }
 }

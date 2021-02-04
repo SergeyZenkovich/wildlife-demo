@@ -237,6 +237,9 @@ main{
   width: 300px;
   height: 360px;
 }
+.slider__slides{
+  transform: none;
+}
 .slide1{
   left: 97px;
 }
@@ -245,6 +248,10 @@ main{
 }
 .slide3{
   left: 817px;
+}
+.noneSlide{
+  visibility: hidden;
+  width: 0px;
 }
 .slider__slide img{
   width: 100%;
@@ -525,10 +532,15 @@ footer .logoBlock__text{
     height: 360px;
     overflow: hidden;
   }
-  .slider__slides{
+  /* .slider__slides{
     display: flex;
     justify-content: space-between;
     width: 950px;
+  } */
+  .slider__slides{
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
   }
   .slide1{
     left: auto;
@@ -712,6 +724,10 @@ footer .logoBlock__text{
   }
   .slider__slidesWrapper{
     width: 320px;
+  }
+/* For slider check */
+  .slider__slides{
+    width: 330px;
   }
 
   .getNotifiedSection{

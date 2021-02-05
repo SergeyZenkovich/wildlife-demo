@@ -6,7 +6,12 @@
   font-family: 'Roboto';
   src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
 body{
+  position: relative;
   margin: 0 auto;
   padding: 0;
   width: 1440px;
@@ -122,6 +127,7 @@ header{
 
 .survivalBlock{
   position: relative;
+  width: 50%;
   top: 60px;
   left: 120px;
   display: flex;
@@ -237,6 +243,7 @@ main{
   width: 300px;
   height: 360px;
 }
+
 .slider__slides{
   transform: none;
 }
@@ -250,8 +257,7 @@ main{
   left: 817px;
 }
 .noneSlide{
-  visibility: hidden;
-  width: 0px;
+  display: none;
 }
 .slider__slide img{
   width: 100%;
@@ -508,7 +514,7 @@ footer .logoBlock__text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 690px;
+    width: 720px;
     height: 360px;
   }
   .slider__nextButton,
@@ -528,15 +534,10 @@ footer .logoBlock__text{
     position: relative;
   }
   .slider__slidesWrapper{
-    width: 650px;
+    width: 700px;
     height: 360px;
     overflow: hidden;
   }
-  /* .slider__slides{
-    display: flex;
-    justify-content: space-between;
-    width: 950px;
-  } */
   .slider__slides{
     display: flex;
     justify-content: space-between;
@@ -721,9 +722,6 @@ footer .logoBlock__text{
   }
   .slider__slide{
     position: relative;
-  }
-  .slider__slidesWrapper{
-    width: 320px;
   }
 /* For slider check */
   .slider__slides{

@@ -12,19 +12,18 @@ html {
 }
 body{
   position: relative;
+  width: 1440px;
   margin: 0 auto;
   padding: 0;
-  width: 1440px;
   font-family: 'fontOpen';
 }
 .visuallyHidden{
   position: absolute;
-  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
   width: 1px;
   height: 1px;
   margin: -1px;
 }
-
 button:hover,
 a:hover,
 input[type='submit'] {
@@ -37,8 +36,7 @@ button:focus,
 input:focus{
   outline: none;
 }
-
-
+/* Head Section */
 .headSection{
   display: flex;
   flex-direction: column;
@@ -47,6 +45,7 @@ input:focus{
   background-color: #02160B;
   background-image: url('../assets/images/Hero.png');
 }
+/* Header block */
 header{
   position: relative;
   display: flex;
@@ -57,9 +56,9 @@ header{
   margin: 0 auto;
 }
 .logoBlock{
-  width: auto;
   display: flex;
   align-items: center;
+  width: auto;
 }
 .logoBlock__image{
   position: relative;
@@ -94,22 +93,20 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f7f7f7;
   font-size: 23px;
   text-decoration: none;
+  color: #f7f7f7;
 }
-.navigationBlock__link_text{
-  line-height: 60px;
-}
+.navigationBlock__link_text{ line-height: 60px; }
 .navigationBlock__link_button{
   position: relative;
+  box-sizing: border-box;
   top: -1px;
   width: 120px;
   height: 50px;
-  border: 2px solid #cd6326;
-  box-sizing: border-box;
-  border-radius: 5px;
   font-family: 'Roboto';
+  border: 2px solid #cd6326;
+  border-radius: 5px;
 }
 .navigationBlock__link_button:hover{
   background-color: #cd6326;
@@ -121,24 +118,23 @@ header{
   border-color: #8f5613;
   color: #f7f7f7;
 }
-.navigationBlock__searchImage:hover{
-  filter: invert(45%) sepia(91%) saturate(555%) hue-rotate(340deg) brightness(84%) contrast(90%);
-}
+.navigationBlock__searchImage:hover{ filter: invert(45%) sepia(91%) saturate(555%) hue-rotate(340deg) brightness(84%) contrast(90%); }
 
+/* Survival block */
 .survivalBlock{
   position: relative;
-  width: 50%;
   top: 60px;
   left: 120px;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 .survivalBlock__heading{
   font-size: 48px;
+  font-weight: 400;
   line-height: 72px; 
   letter-spacing: 2px;
   color: #cd6326;
-  font-weight: 400;
 }
 .survivalBlock__text{
   position: relative;
@@ -161,17 +157,16 @@ header{
   background-color: transparent;
   border-color: transparent;
 }
-.survivalBlock__button:hover{
-  color:#cd6326; 
-}
+.survivalBlock__button:hover{ color:#cd6326; }
 
+/* Main section */
 main{
   position: relative;
   width: 1440px;
   height: 1368px;
   background-color: #ccc;
 }
-
+/* Latest Articles block with slider */
 .latestArticlesBlock{
   position: absolute;
   left: 120px;
@@ -204,7 +199,7 @@ main{
   line-height: 36px; 
   color: #666;
 }
-
+/* Slider */
 .slider{
   position: absolute;
   top: 368px;
@@ -232,7 +227,6 @@ main{
 .slider__prevButton{
   background-image: url('../assets/images/Prev.svg');
   left: 6px;
-  
 }
 .slider__nextButton{
   right: -8px;
@@ -243,36 +237,24 @@ main{
   width: 300px;
   height: 360px;
 }
-
-.slider__slides{
-  transform: none;
-}
-.slide1{
-  left: 97px;
-}
-.slide2{
-  left: 457px;
-}
-.slide3{
-  left: 817px;
-}
-.noneSlide{
-  display: none;
-}
+.slide1{ left: 97px; }
+.slide2{ left: 457px; }
+.slide3{ left: 817px; }
+.noneSlide{ display: none; }
 .slider__slide img{
+  z-index: 10;
   width: 100%;
   height: 100%;
-  z-index: 10;
 }
 .slider__slideTextBlock{
   position: absolute;
   top: 247px;
   left: 0;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  z-index: 100;
   color: #f7f7f7;
 }
 .slider__slideHeading{
@@ -287,6 +269,7 @@ main{
   line-height: 27px;
 }
 
+/* Get Notifitied block */
 .getNotifiedSection{
   position: absolute;
   top: 941px;
@@ -312,9 +295,9 @@ main{
   left: -1px;
   width: 540px;
   height: 58px;
+  font-size: 23px;
   border: 1px solid #666;
   background-color: transparent;
-  font-size: 23px;
   color: #666;
 }
 .getNotifiedSection__input::placeholder{
@@ -346,6 +329,7 @@ main{
   border-color: #8f5613;
 }
 
+/* Footer section */
 footer{
   position: relative;
   display: flex;
@@ -372,10 +356,10 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f7f7f7;
   font-size: 23px;
   text-decoration: none;
   line-height: 60px;
+  color: #f7f7f7;
 }
 .socials{
   position: absolute;
@@ -387,9 +371,7 @@ footer{
   margin: 0;
   list-style: none;
 }
-.socials__link img:hover{
-  filter: invert(75%) sepia(71%) saturate(155%) hue-rotate(130deg) brightness(94%) contrast(100%);
-}
+.socials__link img:hover{ filter: invert(75%) sepia(71%) saturate(155%) hue-rotate(130deg) brightness(94%) contrast(100%); }
 footer .logoBlock{
   position: absolute;
   left: 120px;
@@ -400,27 +382,28 @@ footer .logoBlock__text{
   left: 15px;
   top: -2px;
 }
+
 @media only screen and (max-width: 1439px) {
   body{
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
+
   .headSection{
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   header{
     width: 88%;
     height: 100px;
   }
-
   .logoBlock{
-    width: auto;
     display: flex;
     align-items: center;
+    width: auto;
   }
   .logoBlock__image{
     position: relative;
@@ -428,8 +411,8 @@ footer .logoBlock__text{
   }
   .logoBlock__text{
     position: absolute;
-    width: auto;
     top: auto;
+    width: auto;
     font-size: 32px;
   }
   .navigationBlock{
@@ -443,12 +426,8 @@ footer .logoBlock__text{
     align-items: center;
     list-style: none;
   }
-  .navigationBlock__link{
-    font-size: 23px;
-  }
-  .navigationBlock__link_text{
-    line-height: 60px;
-  }
+  .navigationBlock__link{ font-size: 23px; }
+  .navigationBlock__link_text{ line-height: 60px; }
   .navigationBlock__link_button{
     width: 120px;
     height: 50px;
@@ -485,9 +464,9 @@ footer .logoBlock__text{
   .latestArticlesBlock{
     position: relative;
     left: auto;
-    margin: 0 auto;
     width: 95%;
     height: 65vh;
+    margin: 0 auto;
   }
   .latestArticlesBlock__headingsBlock{
     position: relative;
@@ -524,15 +503,9 @@ footer .logoBlock__text{
     width: 32px;
     height: 65px;
   }
-  .slider__prevButton{
-    left: -10px;
-  }
-  .slider__nextButton{
-    right: -10px;
-  }
-  .slider__slide{
-    position: relative;
-  }
+  .slider__prevButton{ left: -10px; }
+  .slider__nextButton{ right: -10px; }
+  .slider__slide{ position: relative; }
   .slider__slidesWrapper{
     width: 700px;
     height: 360px;
@@ -543,15 +516,9 @@ footer .logoBlock__text{
     justify-content: space-between;
     width: 650px;
   }
-  .slide1{
-    left: auto;
-  }
-  .slide2{
-    left: auto;
-  }
-  .slide3{
-    left: auto;
-  }
+  .slide1{ left: auto; }
+  .slide2{ left: auto; }
+  .slide3{ left: auto; }
   .slider__slideHeading{
     font-size: 20px;
     line-height: 30px;
@@ -562,7 +529,6 @@ footer .logoBlock__text{
     font-size: 15px;
     line-height: 25px;
   }
-
 
   .getNotifiedSection{
     position: relative;
@@ -630,36 +596,30 @@ footer .logoBlock__text{
     left: 15px;
     top: -2px;
     font-size: 30px;
-} 
+  } 
+}
+
 @media only screen and (max-width: 900px){
-  .headSection{
-    height: 45vh;
-  }
+  .headSection{ height: 45vh; }
   .logoBlock__image{
     position: relative;
     top: -1px;
     width: 55px;
   }
   .logoBlock__text {
-  position: relative;
-  font-size: 28px;
-  top: auto;
-  left: 10%;
-}
+    position: relative;
+    top: auto;
+    left: 10%;
+    font-size: 28px;
+  }
   .navigationBlock{
     position: relative;
     left: auto;
     width: 380px;
   }
-  .navigationBlock__list{
-    margin: 0;
-  }
-  .navigationBlock__link{
-    font-size: 20px;
-  }
-  .navigationBlock__link_text{
-    line-height: 40px;
-  }
+  .navigationBlock__list{ margin: 0; }
+  .navigationBlock__link{ font-size: 20px; }
+  .navigationBlock__link_text{ line-height: 40px; }
   .navigationBlock__link_button{
     width: 80px;
     height: 40px;
@@ -689,12 +649,9 @@ footer .logoBlock__text{
     font-size: 17px;
     line-height: 20px;
   }
-  main{
-    height: 90vh;
-  }
-  .latestArticlesBlock__headingsBlock{
-    top: 10px;
-  }
+
+  main{ height: 90vh; }
+  .latestArticlesBlock__headingsBlock{ top: 10px; }
   .latestArticlesBlock__heading{
     font-size: 38px;
     line-height: 40px; 
@@ -703,9 +660,9 @@ footer .logoBlock__text{
     font-size: 18px;
     line-height: 25px; 
   }
-
   .slider{
     width: 350px;
+    margin: 0 auto;
   }
   .slider__nextButton,
   .slider__prevButton{
@@ -714,20 +671,7 @@ footer .logoBlock__text{
     width: 32px;
     height: 50px;
   }
-  .slider__prevButton{
-    left: -10px;
-  }
-  .slider__nextButton{
-    right: -10px;
-  }
-  .slider__slide{
-    position: relative;
-  }
-/* For slider check */
-  .slider__slides{
-    width: 330px;
-  }
-
+  .slider__slides{ width: 330px; }
   .getNotifiedSection{
     top: 20px;
     width: 85%;
@@ -736,9 +680,7 @@ footer .logoBlock__text{
     font-size: 22px;
     line-height: 25px;
   }
-  .getNotifiedSection__form{
-    width: 580px;
-  }
+  .getNotifiedSection__form{ width: 580px; }
   .getNotifiedSection__input{
     width: 500px;
     height: 50px;
@@ -756,7 +698,7 @@ footer .logoBlock__text{
     height: 50px;
     font-size: 18px;
   }
-  
+
   .footerNavigation{
     left: 70px;
     width: 240px;
@@ -765,39 +707,25 @@ footer .logoBlock__text{
     font-size: 16px;
     line-height: 30px;
   }
-  .socials{
-    width: 180px;
-  }
+  .socials{ width: 180px; }
   footer .logoBlock__text{
     left: 5px;
     top: -2px;
     font-size: 26px;
-} 
+  } 
 }
 
 @media only screen and (max-width: 700px){
-  .headSection{
-    height: 30vh;
-  }
+  .headSection{ height: 30vh; }
   .logoBlock__image{
     position: relative;
     width: 40px;
   }
-  .logoBlock__text{
-    font-size: 22px;
-  }
-  .navigationBlock{
-    width: 255px;
-  }
-  .navigationBlock__link{
-    font-size: 15px;
-  }
-  .navigationBlock__link_text{
-    line-height: 20px;
-  }
-  .navigationBlock__searchImage{
-    width: 25px;
-  }
+  .logoBlock__text{ font-size: 22px; }
+  .navigationBlock{ width: 255px; }
+  .navigationBlock__link{ font-size: 15px; }
+  .navigationBlock__link_text{ line-height: 20px; }
+  .navigationBlock__searchImage{ width: 25px; }
   .navigationBlock__link_button{
     width: 60px;
     height: 25px;
@@ -826,12 +754,9 @@ footer .logoBlock__text{
     font-size: 15px;
     line-height: 18px;
   }
-  main{
-    height: 85vh;
-  }
-  .latestArticlesBlock__headingsBlock{
-    top: 0px;
-  }
+
+  main{ height: 85vh; }
+  .latestArticlesBlock__headingsBlock{ top: 0px; }
   .latestArticlesBlock__heading{
     font-size: 32px;
     line-height: 35px; 
@@ -840,7 +765,6 @@ footer .logoBlock__text{
     font-size: 15px;
     line-height: 20px; 
   }
-
   .getNotifiedSection{
     top: -5px;
     width: 95%;
@@ -849,9 +773,7 @@ footer .logoBlock__text{
     font-size: 20px;
     line-height: 22px;
   }
-  .getNotifiedSection__form{
-    width: 420px;
-  }
+  .getNotifiedSection__form{ width: 420px; }
   .getNotifiedSection__input{
     width: 350px;
     height: 40px;
@@ -870,10 +792,7 @@ footer .logoBlock__text{
     font-size: 15px;
   }
   
-  footer{
-    justify-content: space-between;
-  }
-
+  footer{ justify-content: space-between; }
   .footerNavigation{
     left: 50px;
     width: 190px;
@@ -883,34 +802,29 @@ footer .logoBlock__text{
     line-height: 20px;
   }
   .socials{
-    padding: 0;
     flex-wrap: wrap;
     width: 100px;
+    padding: 0;
   }
-  .socials__element{
-    margin: 5px;
-  }
+  .socials__element{ margin: 5px; }
   footer .logoBlock__text{
     left: 5px;
     top: -2px;
     font-size: 22px;
-} 
+  } 
 }
+
 @media only screen and (max-width: 450px){
-  .headSection{
-    height: 24vh;
-  }
+  .headSection{ height: 27vh; }
   .logoBlock__image{
     position: relative;
     width: 40px;
   }
   .logoBlock__text{
     visibility: hidden;
-    clip: rect(0 0 0 0);
+    clip: rect(0,0,0,0);
   }
-  .navigationBlock__list{
-    padding-left: 10px;
-  }
+  .navigationBlock__list{ padding-left: 10px; }
   .survivalBlock__heading{
     font-size: 24px;
     line-height: 25px; 
@@ -929,9 +843,7 @@ footer .logoBlock__text{
     font-size: 14px;
   }
 
-  main{
-    height: 80vh;
-  }
+  main{ height: 80vh; }
   .latestArticlesBlock__heading{
     font-size: 26px;
     line-height: 28px; 
@@ -940,41 +852,28 @@ footer .logoBlock__text{
     font-size: 12px;
     line-height: 14px; 
   }
-  .slider__prevButton{
-    left: 0px;
-  }
-  .slider__nextButton{
-    right: 9px;
-  }
-  .slider__slide img {
-    width: 280px;
-  }
-
-  .getNotifiedSection{
-    top: -5px;
-  }
+  .slider__prevButton{ left: -3px; }
+  .slider__nextButton{ right: 16px; }
+  .slider__slide img { width: 280px; }
+  .getNotifiedSection{ top: -5px; }
   .getNotifiedSection__heading{
     font-size: 16px;
     line-height: 18px;
   }
-  .getNotifiedSection__form{
-    width: 300px;
-  }
+  .getNotifiedSection__form{ width: 300px; }
   .getNotifiedSection__input{
     width: 220px;
     height: 30px;
     font-size: 12px;
   }
-  .getNotifiedSection__input::placeholder{
-    font-size: 12px;
-  }
+  .getNotifiedSection__input::placeholder{ font-size: 12px; }
   .getNotifiedSection__button{
     left: 225px;
     width: 40px;
     height: 30px;
     font-size: 12px;
   }
-
+  footer .logoBlock{ left: 3px; }
   .footerNavigation{
     left: 0px;
     width: 180px;

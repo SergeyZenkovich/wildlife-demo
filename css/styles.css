@@ -147,17 +147,25 @@ header{
 }
 .survivalBlock__button{
   position: relative;
-  top: 36px;
-  left: 34px;
-  width: 76px;
-  height: 27px;
+  top: 23px;
+  left: 0px;
+  width: 160px;
+  height: 60px;
   font-size: 23px;
   line-height: 27px;
   color: #f7f7f7;
-  background-color: transparent;
-  border-color: transparent;
+  background-color: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 5px;
 }
-.survivalBlock__button:hover{ color:#cd6326; }
+.survivalBlock__button:hover{ 
+  background-color: #e39128;
+  border-color: #e39128;
+ }
+ .survivalBlock__button:active{
+  background-color: #8f5613;
+  border-color: #8f5613;
+ }
 
 /* Main section */
 main{
@@ -448,12 +456,13 @@ footer .logoBlock__text{
     line-height: 25px;
   }
   .survivalBlock__button{
-    top: 30px;
-    left: 30px;
-    width: 70px;
-    height: 25px;
+    top: 20px;
+    left: 10px;
+    width: 120px;
+    height: 50px;
     font-size: 20px;
     line-height: 25px;
+    border-radius: 4px;
   }
 
   main{
@@ -629,6 +638,7 @@ footer .logoBlock__text{
   .survivalBlock{
     position: relative;
     left: 30px;
+    top: 0px;
   }
   .survivalBlock__heading{
     margin: 0;
@@ -644,10 +654,11 @@ footer .logoBlock__text{
   .survivalBlock__button{
     top: 0px;
     left: 20px;
-    width: 60px;
-    height: 25px;
+    width: 90px;
+    height: 40px;
     font-size: 17px;
     line-height: 20px;
+    border-radius: 3px;
   }
 
   main{ height: 90vh; }
@@ -749,8 +760,8 @@ footer .logoBlock__text{
   .survivalBlock__button{
     top: -30px;
     left: 10px;
-    width: 40px;
-    height: 20px;
+    width: 65px;
+    height: 30px;
     font-size: 15px;
     line-height: 18px;
   }
@@ -836,10 +847,10 @@ footer .logoBlock__text{
     line-height: 12px;
   }
   .survivalBlock__button{
-    top: -40px;
-    left: -5px;
-    width: 35px;
-    height: 18px;
+    top: -30px;
+    left: 0px;
+    width: 58px;
+    height: 23px;
     font-size: 14px;
   }
 
